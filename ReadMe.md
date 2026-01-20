@@ -96,50 +96,50 @@ ffmpeg -i clip.avi -vf idet -an -f null - 2>&1 | tail -n 60
 **How to interpret:**
 <details>
     <summary>Output</summary>
-```bash
-ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
-  built with Apple clang version 16.0.0 (clang-1600.0.26.6)
-  configuration: --prefix=/usr/local/Cellar/ffmpeg/8.0.1_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-videotoolbox --enable-audiotoolbox
-  libavutil      60.  8.100 / 60.  8.100
-  libavcodec     62. 11.100 / 62. 11.100
-  libavformat    62.  3.100 / 62.  3.100
-  libavdevice    62.  1.100 / 62.  1.100
-  libavfilter    11.  4.100 / 11.  4.100
-  libswscale      9.  1.100 /  9.  1.100
-  libswresample   6.  1.100 /  6.  1.100
-[mp3float @ 0x7fbf58709280] Header missing
-Input #0, avi, from 'clip.avi':
-  Metadata:
-    software        : Lavf62.3.100
-  Duration: 00:00:30.83, start: 0.000000, bitrate: 1164 kb/s
-  Stream #0:0: Video: mpeg4 (Advanced Simple Profile) (XVID / 0x44495658), yuv420p, 720x540 [SAR 1:1 DAR 4:3], 1022 kb/s, 29.97 fps, 29.97 tbr, 29.97 tbn
-  Stream #0:1: Audio: mp3 (mp3float) (U[0][0][0] / 0x0055), 44100 Hz, stereo, fltp, 128 kb/s
-[Parsed_idet_0 @ 0x7fbf59004480] Repeated Fields: Neither:     0 Top:     0 Bottom:     0
-[Parsed_idet_0 @ 0x7fbf59004480] Single frame detection: TFF:     0 BFF:     0 Progressive:     0 Undetermined:     0
-[Parsed_idet_0 @ 0x7fbf59004480] Multi frame detection: TFF:     0 BFF:     0 Progressive:     0 Undetermined:     0
-Stream mapping:
-  Stream #0:0 -> #0:0 (mpeg4 (native) -> wrapped_avframe (native))
-Press [q] to stop, [?] for help
-[mpeg4 @ 0x7fbf59007480] Video uses a non-standard and wasteful way to store B-frames ('packed B-frames'). Consider using the mpeg4_unpack_bframes bitstream filter without encoding but stream copy to fix it.
-Output #0, null, to 'pipe:':
-  Metadata:
-    software        : Lavf62.3.100
-    encoder         : Lavf62.3.100
-  Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 720x540 [SAR 1:1 DAR 4:3], q=2-31, 200 kb/s, 29.97 fps, 29.97 tbn
+    ```bash
+    ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+    built with Apple clang version 16.0.0 (clang-1600.0.26.6)
+    configuration: --prefix=/usr/local/Cellar/ffmpeg/8.0.1_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-videotoolbox --enable-audiotoolbox
+    libavutil      60.  8.100 / 60.  8.100
+    libavcodec     62. 11.100 / 62. 11.100
+    libavformat    62.  3.100 / 62.  3.100
+    libavdevice    62.  1.100 / 62.  1.100
+    libavfilter    11.  4.100 / 11.  4.100
+    libswscale      9.  1.100 /  9.  1.100
+    libswresample   6.  1.100 /  6.  1.100
+    [mp3float @ 0x7fbf58709280] Header missing
+    Input #0, avi, from 'clip.avi':
     Metadata:
-      encoder         : Lavc62.11.100 wrapped_avframe
-[mpeg4 @ 0x7fbf59008240] Discarding excessive bitstream in packed xvid
-[mpeg4 @ 0x7fbf590096c0] Discarding excessive bitstream in packed xvid
-[mpeg4 @ 0x7fbf5900b940] Discarding excessive bitstream in packed xvid
-    Last message repeated 1 times
-[mpeg4 @ 0x7fbf59008240] Discarding excessive bitstream in packed xvid
-[mpeg4 @ 0x7fbf59008900] Discarding excessive bitstream in packed xvid
-[Parsed_idet_0 @ 0x7fbf59104e40] Repeated Fields: Neither:   923 Top:     0 Bottom:     0
-[Parsed_idet_0 @ 0x7fbf59104e40] Single frame detection: TFF:     0 BFF:     0 Progressive:   411 Undetermined:   512
-[Parsed_idet_0 @ 0x7fbf59104e40] Multi frame detection: TFF:     0 BFF:     0 Progressive:   923 Undetermined:     0
-[out#0/null @ 0x7fbf5870bf00] video:375KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame=  923 fps=0.0 q=-0.0 Lsize=N/A time=00:00:30.86 bitrate=N/A speed=99.2x elapsed=0:00:00.31
-```
+        software        : Lavf62.3.100
+    Duration: 00:00:30.83, start: 0.000000, bitrate: 1164 kb/s
+    Stream #0:0: Video: mpeg4 (Advanced Simple Profile) (XVID / 0x44495658), yuv420p, 720x540 [SAR 1:1 DAR 4:3], 1022 kb/s, 29.97 fps, 29.97 tbr, 29.97 tbn
+    Stream #0:1: Audio: mp3 (mp3float) (U[0][0][0] / 0x0055), 44100 Hz, stereo, fltp, 128 kb/s
+    [Parsed_idet_0 @ 0x7fbf59004480] Repeated Fields: Neither:     0 Top:     0 Bottom:     0
+    [Parsed_idet_0 @ 0x7fbf59004480] Single frame detection: TFF:     0 BFF:     0 Progressive:     0 Undetermined:     0
+    [Parsed_idet_0 @ 0x7fbf59004480] Multi frame detection: TFF:     0 BFF:     0 Progressive:     0 Undetermined:     0
+    Stream mapping:
+    Stream #0:0 -> #0:0 (mpeg4 (native) -> wrapped_avframe (native))
+    Press [q] to stop, [?] for help
+    [mpeg4 @ 0x7fbf59007480] Video uses a non-standard and wasteful way to store B-frames ('packed B-frames'). Consider using the mpeg4_unpack_bframes bitstream filter without encoding but stream copy to fix it.
+    Output #0, null, to 'pipe:':
+    Metadata:
+        software        : Lavf62.3.100
+        encoder         : Lavf62.3.100
+    Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 720x540 [SAR 1:1 DAR 4:3], q=2-31, 200 kb/s, 29.97 fps, 29.97 tbn
+        Metadata:
+        encoder         : Lavc62.11.100 wrapped_avframe
+    [mpeg4 @ 0x7fbf59008240] Discarding excessive bitstream in packed xvid
+    [mpeg4 @ 0x7fbf590096c0] Discarding excessive bitstream in packed xvid
+    [mpeg4 @ 0x7fbf5900b940] Discarding excessive bitstream in packed xvid
+        Last message repeated 1 times
+    [mpeg4 @ 0x7fbf59008240] Discarding excessive bitstream in packed xvid
+    [mpeg4 @ 0x7fbf59008900] Discarding excessive bitstream in packed xvid
+    [Parsed_idet_0 @ 0x7fbf59104e40] Repeated Fields: Neither:   923 Top:     0 Bottom:     0
+    [Parsed_idet_0 @ 0x7fbf59104e40] Single frame detection: TFF:     0 BFF:     0 Progressive:   411 Undetermined:   512
+    [Parsed_idet_0 @ 0x7fbf59104e40] Multi frame detection: TFF:     0 BFF:     0 Progressive:   923 Undetermined:     0
+    [out#0/null @ 0x7fbf5870bf00] video:375KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+    frame=  923 fps=0.0 q=-0.0 Lsize=N/A time=00:00:30.86 bitrate=N/A speed=99.2x elapsed=0:00:00.31
+    ```
 </details>
 
 * `Multi frame detection: Progressive` dominant → likely progressive overall
