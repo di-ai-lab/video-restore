@@ -1,6 +1,6 @@
 # Long Vacation (XVID) Restoration Playground (macOS / Apple Silicon)
 
-[Cover Image](iamges/cover.png)
+[Cover Image](images/cover.png)
 
 A small, hacky-but-structured video restoration playground for older TV sources (e.g., XVID AVI).  
 Goal: learn and document a practical workflow to improve perceived clarity while avoiding common pitfalls (interlacing artifacts, over-sharpening, “plastic faces”, temporal flicker).
@@ -111,7 +111,7 @@ open frame.png
 
 * horizontal “teeth” on edges (arms, faces, subtitles) during motion
 
-[interlace_check](iamges/interlace_check.png)
+[interlace_check](images/interlace_check.png)
 
 **Project finding so far:** combing (if present) is not obvious.
 
