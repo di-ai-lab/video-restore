@@ -158,8 +158,10 @@ ffmpeg -i clip.avi -vf "bwdif=mode=send_frame:parity=auto:deint=interlaced,scale
 -c:v libx264 -crf 16 -preset slow -c:a copy \
 B_bwdif_auto.mp4
 ```
-## A vs B
-![A](../images/a.png) ![B](../images/b.png)
+
+A             |               B
+:-------------------------:|:-------------------------:
+![A](../images/a.png)      |  ![B](../images/b.png)
 
 **Project finding so far:** A and B looked **very similar**, so the working assumption is **progressive** processing.
 
@@ -210,5 +212,9 @@ clip_clean_scale.mp4
 * subtitles edges cleaner
 * faces still natural (no waxy skin)
 * minimal added flicker
+
+A             |               Baseline Restoration
+:-------------------------:|:-------------------------:
+![A](../images/a.png)      |  ![baseline_restoration](../images/baseline_restoration.png)
 
 **Project finding so far:** baseline looked *slightly more refined*, but not “clear enough”, suggesting AI restoration/super-resolution is needed next.
