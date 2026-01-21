@@ -215,6 +215,6 @@ clip_clean_scale.mp4
 
 A             |               Baseline Restoration
 :-------------------------:|:-------------------------:
-![A](../images/a.png)      |  ![baseline_restoration](../images/baseline_restoration_ori.png)
+![A](../images/a.png)      |  ![baseline_restoration](../images/baseline_restoration.png)
 
 **Project finding so far:** baseline looked *slightly more refined*, but not “clear enough”, suggesting AI restoration/super-resolution is needed next.
