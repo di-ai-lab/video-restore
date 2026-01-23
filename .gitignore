@@ -2,3 +2,7 @@
 .vscode/
 .idea/
 .DS_Store
+
+
+# Ignore venv
+venv/
