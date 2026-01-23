@@ -2,3 +2,9 @@
 .vscode/
 .idea/
 .DS_Store
+
+# no outputs folder
+outputs/*
+onnxruntime/
+models/
+scripts/
